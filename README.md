@@ -27,8 +27,8 @@ project_root/
 
 1. Clone this repository:
 ```bash
-git clone <your-repository-url>
-cd <repository-name>
+git clone https://github.com/avstiix/neural-network-ocr.git
+cd neural-network-ocr
 ```
 
 2. Create a virtual environment (optional but recommended):
@@ -104,7 +104,7 @@ Feel free to open issues or submit pull requests for improvements.
 
 ## License
 
-[Your chosen license]
+MIT License
 
 ## Acknowledgments
 
