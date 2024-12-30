@@ -1,14 +1,23 @@
 # Neural Network OCR Project
 
-A simple Optical Character Recognition (OCR) system built with PyTorch, designed to recognize handwritten digits using a Convolutional Neural Network (CNN).
+A sophisticated Optical Character Recognition (OCR) system built with PyTorch, featuring advanced model optimization, data augmentation, and deployment capabilities.
 
 ## Features
 
+### Core Functionality
 - CNN-based neural network for digit recognition
-- Training using the MNIST dataset
-- Support for custom image testing
+- MNIST dataset training integration
+- Custom image testing support
 - Test image generation utility
-- Interactive testing script
+
+### Advanced Features
+- Model optimization through pruning and quantization
+- Data augmentation pipeline
+- Model performance benchmarking
+- ONNX model export support
+- Comprehensive visualization tools
+- Docker containerization
+- GPU acceleration support
 
 ## Project Structure
 
