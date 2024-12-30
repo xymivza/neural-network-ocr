@@ -11,16 +11,17 @@ def main():
     
     model = OCRNet().to(device)
     try:
-        model.load_state_dict(torch.load('ocr_model.pth'))
+        checkpoint = torch.load('best_ocr_model.pth')
+        model.load_state_dict(checkpoint['model_state_dict'])
         model.eval()
     except:
-        print("Error: Could not find trained model (ocr_model.pth)")
+        print("Error: Could not find trained model (best_ocr_model.pth)")
         return
 
     image_path = sys.argv[1]
     try:
-        result = predict(model, image_path, device)
-        print(f"Predicted digit: {result}")
+        prediction, confidence = predict(model, image_path, device)
+        print(f"Predicted digit: {prediction} (Confidence: {confidence:.2%})")
     except Exception as e:
         print(f"Error processing image: {str(e)}")
 
